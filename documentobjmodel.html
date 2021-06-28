@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{ 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+} 
+
+/* Assigning all the same properties to the body */
+body{ 
+    color: rgb(0, 0, 0);
+	height: 100vh; 
+	display: flex; 
+	justify-content: center; 
+	background-image: url("6B8CA0.jpg");
+
+    background-size: cover; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+    background-repeat: repeat-x;
+	align-items: center; 
+     font-weight: 900;
+	width: 30em; 
+	background-color: rgb(255, 255, 255); 
+	overflow: hidden; 
+	border-radius: 0.9px; 
+    letter-spacing: 1px;
+	text-align: center; 
+	font-family: Papyrus;
+	font-size: 1em; 
+   
+border: 6px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+} 
+
+#chat{ 
+
+    word-break: break-all;
+
+    text-transform: capitalize;
+    max-width: 30vh;
+    max-height: 30vh;
+     font-weight: 900;
+	width: 20em; 
+    height: 20em; 
+	background-color: rgb(255, 255, 255); 
+	overflow: hidden; 
+	border-radius: 0.9px; 
+    letter-spacing: 1px;
+	text-align: center; 
+	font-family: Papyrus;
+	font-size: 1em; 
+   
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+} 
+
+.container{ 
+    margin-right: -100px;
+	width: 20em; 
+	background-color:rgb(255, 255, 255); 
+    border: #ff1d1d 6px solid;
+    	box-shadow: 0 0.6em 1.9em ; 
+	overflow: hidden; 
+	border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+	text-align: center; 
+	font-family: 'Open Sans Condensed', sans-serif; 
+	font-size: 1em; 
+} 
+
+.user-image{ 
+    height: 95px;
+	padding: 3em 0; 
+	background-image: linear-gradient(70deg,#fff020,#ffe817); 
+    
+} 
+
+.user-image img{ 
+	width: 7em; 
+	height: 7em; 
+	border-radius: 50%; 
+	box-shadow: 0 0.6em 1.9em ; 
+	object-fit: cover; 
+} 
+#wee{
+    /* Rectangle 6 */
+        margin-left: 400px;
+/* Rectangle 6 */
+/* EMAIL */
+
+position: absolute;
+
+
+
+font-family: Trocchi;
+font-style: normal;
+font-weight: normal;
+font-size: 27px;
+
+
+color: #7A0000;
+
+
+position: absolute;
+
+
+
+background: #FFF8D1;
+border: 3px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+.lbtn{
+    /* Example */
+margin-top: 10px;
+
+width: 70px;
+height: 33px;
+
+/* Gray 6 */
+background: #f2f2f205;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+
+
+}
+#kbtn{
+     /* Example */
+
+margin-right: 12px;
+width: 140px;
+height: 33px;
+
+/* Gray 6 */
+background: #f2f2f200;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+
+}
+.content{ 
+    margin-left: 100px;
+	padding: 2.2em; 
+} 
+#redr{
+color: rgb(224, 6, 6);
+}
+.lbtnc{
+    /* Example */
+margin-top: 10px;
+
+width: 170px;
+height: 33px;
+
+/* Gray 6 */
+background: #f2f2f205;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+
+
+}
+#kbtn{
+     /* Example */
+
+margin-right: 12px;
+width: 140px;
+height: 33px;
+
+/* Gray 6 */
+background: #f2f2f200;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+
+}
+.content{ 
+	max-width: 25em; 
+	background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+	padding: 2.2em; 
+    box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+} 
+
+.name{ 
+	font-size: 1.5em; 
+	text-transform: uppercase; 
+} 
+#kbtn{
+     /* Example */
+
+margin-right: 12px;
+width: 140px;
+height: 33px;
+
+/* Gray 6 */
+background: #f2f2f200;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+
+}
+#p1{
+    background-color: #6B8CA0;
+    font-family: monospace;
+    letter-spacing: 2px;
+text-decoration-color: #ff1d1d;
+font-size: 20px;
+max-width: 50vh;
+color: rgb(255, 255, 255);
+font-variant: initial;
+max-height: 167px;
+}
+#p2{
+  font-family: monospace;
+    letter-spacing: 3px;
+text-decoration-color: #ff1d1d;
+font-size: 20px;
+color: rgb(76, 14, 190);
+}
+.p22{
+    height: 30vh;
+width: 45vh;
+  background: #f2f2f200;
+border: 4px solid #D2B102;
+box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+    margin-left: 100px;
+    background-color: rgb(255, 255, 255);
+  font-family: monospace;
+    letter-spacing: 3px;
+text-decoration-color: #ff1d1d;
+font-size: 20px;
+max-width: 300vh;
+height: 85vh;
+border-radius: 10px;
+color: rgb(76, 14, 190);
+}
+#p22{
+   
+    background-color: rgb(255, 255, 255);
+  font-family: monospace;
+    letter-spacing: 3px;
+text-decoration-color: #ff1d1d;
+font-size: 20px;
+width: 250px;
+
+border-radius: 10px;
+color: rgb(76, 14, 190);
+}
+section{
+    background: #00000094;
+border: 6px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+</style>
+<body>
+  
+   <img src="6B8CA0.jpg" alt="" width="150">
+    
+
+
+    <script>
+        var index = 0;
+        var text = ' ';
+        var speed = 40;
+
+        function textEffect() {
+            if (index < text.length) {
+                document.getElementById("afterclick")
+                    .innerHTML += text.charAt(index);
+                index++;
+                setTimeout(textEffect, speed);
+
+            }
+        }
+    </script>
+    <script>
+        var index = 0;
+        var text = ' If you have any questions related to our content, kindly email -qnapallatine@gmail.com.. Our experts will reach you as soon as possible..  ';
+        var speed = 40;
+
+        function textEffect2() {
+            if (index < text.length) {
+                document.getElementById("afterclick")
+                    .innerHTML += text.charAt(index);
+                index++;
+                setTimeout(textEffect, speed);
+
+            }
+        }
+    </script>
+    <section>
+
+<div class="content">
+    <br><br>
+    <h3>Let's Chat</h3>
+    <h3>We're here to help, Enter your name here.. <br> Our team will connect with you withing 3-4 hours..</h3>
+
+
+
+    <input type="text" id="chat" placeholder="Max Word limit-20"> <br><br>
+    <input type="email" id="kbtn" placeholder="Enter your email address"><br><br>
+    <input type="button" value="send" onclick="Chat()" id="p22">
+    </a>
+    <p id="p2">QUES PREVIEW:-</p>
+    <br />
+    <p id="p1"> </p>
+
+
+</div>
+    </section>
+
+
+    <script>
+        function Chat()
+        {
+                 var c=document.getElementById("chat").value;
+                 var e=document.getElementById("kbtn").value;
+                 
+                 document.getElementById("p2").innerHTML="Your following email'"+e+" 'is acknowledged"
+                 document.getElementById("p1").innerHTML+=c+" :(THANKS FOR CONTACTING US, WE HAVE NOTED DOWN YOUR QUERY.)  " + '<br/>' + '<br/>'   + '<br/>'   + '<br/>'   + '<br/>'    + '<br/>'  +'<br/>' ;
+        }
+       
+    </script>
+    <section>
+<button class="p22" onclick="textEffect()">
+    <h3>
+        
+        <p>NOTE:</p>
+    </h3>
+    <h4 id="afterclick"></h4>
+    </a>
+    <button class="bs2" onclick="textEffect2()">
+
+    </button>
+    <h4 id="afterclick2"></h4>
+    </a>
+</button>
+
+    </section>
+  
+</body>
+</html>

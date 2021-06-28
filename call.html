@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    Body{
+        
+        font-family: fantasy;
+        font-size: 30px;
+        border: rgb(46, 46, 46) 2px double;
+    }
+    #e2{
+         margin-left: 600px;
+
+          font-family: fantasy;
+        font-size: 20px;
+        border: rgb(255, 32, 32) 3px double;
+    }
+    #e3{
+ margin-left: 200px;
+          font-family: fantasy;
+        font-size: 20px;
+        border: black 3px double;
+    
+    }
+    *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("6B8CA0.jpg");
+border: 10px double rgb(0, 29, 82);
+    font-family: arial;
+    color:#fff;
+}
+.container
+{
+height: 200px;
+    width: 900px;
+    background: #182466;
+color: white;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+}
+.container h2
+{
+    text-align: center;
+    margin-bottom: 15px
+}
+textarea
+{
+    height: 20px;
+    width: 100%;
+    border: none;
+  
+    background-color: transparent;
+    margin-bottom: 10px;
+    resize: none;
+    outline: none;
+    transition: .5s
+    background: #000000;
+color: white;
+border: 1px solid #D2B102;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 3px;
+}
+
+input[type="submit"], button
+{
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type="submit"]
+{
+ font-family: Ink Free;
+           font-weight: 900;
+           font-size: 29px;
+      
+      background:rgb(84, 15, 211);
+    
+            box-shadow: 2.0rem 2.0rem 5.0rem rgb(0,0,0,0.4); 
+            border-radius: 1.5rem; 
+         color: white;
+
+margin: 8px;
+
+  
+           
+
+
+}
+button
+{
+    color: rgb(255, 255, 255);
+    background-color: transparent
+}
+.btn
+{
+    display: none
+}
+</style>
+<body>
+    
+        <div class="container">
+            <h2>INSTANT NOTES</h2>
+            <form>
+                <textarea placeholder=' I WANT TO NOTE DOWN__FROM THIS WEBSITE'></textarea>
+                <div class="btn">
+                    <input type="submit" value='CREATE'>
+                    <button id='clear' href='#'>Cancel</button>
+                </div>
+            </form>
+        </div>
+<script>var feild = document.querySelector('textarea');
+    var backUp = feild.getAttribute('placeholder');
+    var btn = document.querySelector('.btn');
+    var clear = document.getElementById('clear')
+
+    feild.onfocus = function () {
+        this.setAttribute('placeholder', '');
+        this.style.borderColor = '#333';
+        btn.style.display = 'block'
+    }
+
+    feild.onblur = function () {
+        this.setAttribute('placeholder', backUp);
+        this.style.borderColor = '#aaa'
+    }
+
+    clear.onclick = function () {
+        btn.style.display = 'none';
+        feild.value = '';
+    }</script>
+    <section>
+        
+    </section>
+</body>
+</html>
